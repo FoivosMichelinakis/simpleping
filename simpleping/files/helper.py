@@ -10,6 +10,8 @@ import subprocess
 import zmq
 import netifaces
 import time
+import shutil
+from pathlib import Path
 
 if os.path.isdir("/monroe"):
     # monroe container instance
@@ -21,7 +23,7 @@ if os.path.isdir("/monroe"):
     typeOfNode = "Monroe"
 # elif (os.uname().nodename in ["ubuntu", 'foivosLaptop.local', 'dominos']):
 else:
-    # testing
+    # testing instance
     print("testing")
     CONFIG_FILE = '../../supportingFiles/config'
     RESULTS_DIR = '../../supportingFiles/testingResults/'
