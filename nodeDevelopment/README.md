@@ -1,4 +1,4 @@
-# How to develop an experiment for the nodes
+# How to run an experiment manually (i.e. without the scheduler) on a node
 
 ## Manual
 

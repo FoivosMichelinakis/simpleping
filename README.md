@@ -16,7 +16,7 @@ example, our experiment follows the client-server paradigm.
 which nodes and when the container will be deployed and run.
 Alternativly we can use the web interface of the scheduler at
 `https://haugerud.nntb.no`.
-4. We retrieve the results from `pioneer.nntb.no`.
+4. We retrieve the results from the temporary storage server `pioneer.nntb.no`.
 
 ## Repository structure
 
@@ -34,3 +34,10 @@ There are also some helper scripts to interact with the scheduler
 programmatically.
 * **nodeDevelopment**: instructions on how to connect directly on a node to 
 test your containers.
+* **nodeResults**: Directory where we fetch the files created by the
+experiements.
+It includes the files created by the container as well as as dignostic files
+created automatically, such as the deployment log and a log with everything
+printed on the screen.
+Each folder is an expriment instance run and is fetched "as is" from the 
+temporary storage server `pioneer.nntb.no`.
